@@ -17,3 +17,7 @@ h1 {
 .footer {
     margin-top: 50px !important;
 }
+
+label {
+    padding-right: 5px;
+}
