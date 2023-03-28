@@ -1,35 +1,37 @@
 import React, { useState } from 'react';
 
 function ContactForm(props) {
-  const [input, setInput] = useState('');
+  const [inputs, setInputs] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     props.onSubmit({
-      // code to go here
+      // code goes here
     });
 
-    setInput('');
+    setInputs('');
   };
 
   const handleChange = (e) => {
-    setInput(e.target.value);
+    const name = e.target.name;
+    const value = e.target.value;
+    setInputs(values => ({...values, [name]: value}));
   };
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" name="name" class="form-control" value={input} onChange={handleChange} placeholder="Your name here"></input>
+        <input type="text" name="username" class="form-control" value={inputs.username || ""} onChange={handleChange} placeholder="Your name here" required></input>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input type="email" name="email" class="form-control"  value={input} onChange={handleChange} placeholder="name@example.com"></input>
+        <input type="email" name="email" class="form-control"  value={inputs.email || ""} onChange={handleChange} placeholder="name@example.com" required></input>
       </div>
       <div class="mb-3">
         <label for="message" class="form-label">Message</label>
-        <textarea name="email" class="form-control"  value={input} onChange={handleChange} rows="3"></textarea>
+        <textarea name="message" class="form-control"  value={inputs.message || ""} onChange={handleChange} rows="3" required></textarea>
       </div>
         <button className="bucket-button">Submit</button>
     </form>
