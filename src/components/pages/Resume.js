@@ -11,7 +11,7 @@ export default function Resume() {
         Use the link below:
       </p>
       <p>
-        <a href="./Resume_M-d.pdf">Download pdf resume</a>
+        <a href="./Resume_M-d.pdf" download>Download pdf resume</a>
       </p>
     </div>
   );
