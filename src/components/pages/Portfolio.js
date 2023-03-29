@@ -2,15 +2,15 @@ import React from 'react';
 
 function App(props) {
   return (
-    <div class="col-sm-6 mb-3 mb-sm-0">
-      <div class="card">
+    <div class="col-sm-4 mb-3 mb-sm-0">
+      <div class="card app">
         <img src={ props.image } class="card-img-top" alt={ props.title }></img>
-        <div class="card-body">
+        <div class="card-body title">
           <h5 class="card-title">{ props.title }</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Deployed Application: <a href={ props.deploy } class="card-link">{ props.deploy }</a></li>
-          <li class="list-group-item">GitHub Link: <a href={ props.git } class="card-link">{ props.git }</a></li>
+          <li class="list-group-item"><a href={ props.deploy } class="card-link">Deployed Application</a></li>
+          <li class="list-group-item"><a href={ props.git } class="card-link">GitHub Repository</a></li>
         </ul>
       </div>
     </div>

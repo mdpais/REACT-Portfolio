@@ -20,10 +20,10 @@ function ContactForm(props) {
   };
 
   return (
-    <div class="card single">
-      <h5 class="card-header">
+    <div class="card single form">
+      <h4 class="card-header">
         Fill in the details below and I'll get back to you
-      </h5>
+      </h4>
       <form className="contact-form card-body" onSubmit={handleSubmit}>
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
