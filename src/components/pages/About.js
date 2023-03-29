@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className='main'>
       <h2>About Me</h2>
-      <div class="card mb-3">
+      <div class="card single mb-3">
         <div class="row g-0">
           <div class="col-md-4">
             <div class="avatar">

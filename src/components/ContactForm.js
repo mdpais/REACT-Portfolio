@@ -20,7 +20,7 @@ function ContactForm(props) {
   };
 
   return (
-    <div class="card">
+    <div class="card single">
       <h5 class="card-header">
         Fill in the details below and I'll get back to you
       </h5>

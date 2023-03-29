@@ -19,6 +19,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+h5 {
+    margin-top: -30px;
+}
+
 .footer {
     margin-top: 50px !important;
     padding-top: 12px !important;
@@ -35,7 +39,7 @@ label {
     margin-right: 5px;
 }
 
-.card {
+.single {
     max-width: 1000px;
     margin: auto;
 }
@@ -50,4 +54,13 @@ label {
 
 .card-body {
     margin-top: 40px;
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    margin-bottom: 20px;
 }
