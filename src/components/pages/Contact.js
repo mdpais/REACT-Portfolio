@@ -7,10 +7,8 @@ export default function Contact() {
   };
   return (
     <div className='main'>
-      <h2>Send me a message</h2>
-      <p>
-        ...and I'll get back to you.
-      </p>
+      <h2>Want to know more?</h2>
+      <br></br>
       <ContactForm onSubmit={submitMessage} />
     </div>
   );
